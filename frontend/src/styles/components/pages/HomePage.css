@@ -1,0 +1,21 @@
+
+
+.homeimg{
+    clear: both;
+    margin-bottom: 1.5em;
+}
+
+.bienvenidos {
+    width: 75%;
+    padding-right: 2em;
+    float: left;
+}
+
+.bienvenidos, .testimonios{
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.bienvenidos p {
+    font-size: 1.5em;
+}
