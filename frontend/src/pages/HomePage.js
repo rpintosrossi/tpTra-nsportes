@@ -16,13 +16,13 @@ const HomePage = (props) => {
                 <div className="testimonios">
                     <h2>Testimonios</h2>
                     <div className="testimonio">
-                    <span class="cita">Simplemente Excelente</span>
-                    <span class="autor">Juan Perez - zapatos.com</span>
+                        <span className="cita">Simplemente Excelente</span>
+                        <span className="autor">Juan Perez - zapatos.com</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main >
+        </main >
     )
-    } 
-    
-    export default HomePage;
+}
+
+export default HomePage;

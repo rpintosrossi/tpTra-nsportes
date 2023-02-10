@@ -1,5 +1,5 @@
-import '../styles/components/pages/contactoPage.css';
-import React, {useState } from 'react';
+import '../styles/components/pages/ContactoPage.css';
+import React, { useState } from 'react';
 import axios from 'axios';
 
 
@@ -9,7 +9,7 @@ const ContactoPage = (props) => {
         nombre: '',
         email: '',
         telefono: '',
-        mensaje:''
+        mensaje: ''
     }
 
     const [sending, setSending] = useState(false);
@@ -29,10 +29,10 @@ const ContactoPage = (props) => {
         setMsg('');
         setSending(true)
         const responde = await axios.post('http://localhost:3000/api/contacto',
-        formData);
+            formData);
         setSending(false);
         setMsg(responde.data.message);
-        if (Response.data.error === false){
+        if (Response.data.error === false) {
             setFormData(initialForm)
         }
     }
@@ -45,36 +45,36 @@ const ContactoPage = (props) => {
                     <p>
                         <label>Nombre</label>
                         <input type="text" name="nombre" value={FormData.nombre}
-                        onChange={handleChange} />
+                            onChange={handleChange} />
                     </p>
                     <p>
                         <label>Email</label>
                         <input type="text" name="email" value={FormData.email}
-                        onChange={handleChange} />
+                            onChange={handleChange} />
                     </p>
                     <p>
                         <label>Telefono</label>
                         <input type="text" name="telefono" value={FormData.telefono}
-                        onChange={handleChange} />
+                            onChange={handleChange} />
                     </p>
                     <p>
                         <label>Comentario</label>
                         <input type="text" name="telefono" value={FormData.mensaje}
-                        onChange={handleChange} />
+                            onChange={handleChange} />
                     </p>
                     {sending ? <p>Enviando...</p> : null}
                     {msg ? <p>{msg}</p> : null}
-                    <p className="centrar"><input type ="submit" value="enviar" /></p>
+                    <p className="centrar"><input type="submit" value="enviar" /></p>
                 </form>
             </div>
-            <div class ="datos">
+            <div className="datos">
                 <h2>Otras vias de comunicacion</h2>
                 <p>Tambien puede contactarse con nosotros usando
                     los siguientes medios</p>
                 <ul>
                     <li>Telefono: 46787846</li>ç
                     <li>Facebook: TransportesX</li>ç
-                    
+
                 </ul>
             </div>
         </main>

@@ -1,15 +1,15 @@
 import React from 'react';
 import '../../styles/components/layout/Header.css';
 
-const Header = ( props ) => {
+const Header = (props) => {
     return (
-        <Header>
+        <header>
             <div className="Holder">
-                <img src='./public/img/logo.png' width={100} alt="Transportes X">
+                <img src='./public/logo192.png' width={100} alt="Transportes X">
                 </img>
                 <h1>Transportes X</h1>
             </div>
-        </Header>
+        </header>
 
     );
 }

@@ -1,6 +1,4 @@
-
-
-.homeimg{
+.homeimg {
     clear: both;
     margin-bottom: 1.5em;
 }
@@ -11,7 +9,8 @@
     float: left;
 }
 
-.bienvenidos, .testimonios{
+.bienvenidos,
+.testimonios {
     display: inline-block;
     box-sizing: border-box;
 }

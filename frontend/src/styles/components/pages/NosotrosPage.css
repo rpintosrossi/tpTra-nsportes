@@ -15,13 +15,14 @@
     text-align: center;
 }
 
-.persona img{
+.persona img {
     border-radius: 50%;
-    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
     margin: 0.8em 0 1em;
 }
 
-.persona h5, .persona h6{
+.persona h5,
+.persona h6 {
     font-weight: normal;
     color: #2e64a1;
     margin: 0;
@@ -31,18 +32,18 @@
     font-size: 0.9em;
 }
 
-.persona h6{
+.persona h6 {
     font-size: 0.8em;
     font-style: italic;
     margin-bottom: 1em;
 }
 
-.persona p{
+.persona p {
     font-size: 0.7em;
     margin: 0 1em 1em;
-    color:#444;
+    color: #444;
 }
 
-.persona:first-child{
+.persona:first-child {
     margin-left: 0;
 }
